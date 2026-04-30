@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios Premium | FIX & GO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">FIX & GO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="accesorios.html" class="active">Accesorios</a></li>
+            <li><a href="sedes.html">Sedes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="min-height: 50vh;"> <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="reveal">COMPLEMENTOS DE ÉLITE<br></h1>
+                <p>Protección y potencia para tu dispositivo con accesorios certificados Grado A+.</p>
+            </div>
+            <div class="hero-mobile-box">
+                <img src="accesorios-hero.png" alt="Accesorios FIXGO" class="floating-mobile">
+            </div>
+        </div>
+    </header>
+
+<section class="category-nav reveal" style="padding: 60px 20px; background: #0a0a0a;">
+    <div class="section-title" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 1.5rem; color: #fff; letter-spacing: 2px;">SELECCIONA UNA CATEGORÍA</h2>
+    </div>
+    
+    <div class="category-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto;">
+        
+        <a href="accesorios-proteccion.html" class="category-card" style="text-decoration: none; background: #1a1a1a; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s;">
+            <div style="padding: 30px 20px; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">🛡️</div>
+                <h4 style="color: #fff; font-weight: 800; margin: 0;">PROTECCIÓN Y CARGA</h4>
+            </div>
+            <div style="height: 200px; background: #252525; overflow: hidden;">
+                <img src="carga.png" alt="Protección" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+            </div>
+        </a>
+
+        <a href="accesorios-audio.html" class="category-card" style="text-decoration: none; background: #1a1a1a; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s;">
+            <div style="padding: 30px 20px; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">🎧</div>
+                <h4 style="color: #fff; font-weight: 800; margin: 0;">AUDIO & SONIDO</h4>
+            </div>
+            <div style="height: 200px; background: #252525; overflow: hidden;">
+                <img src="cascos.png" alt="Audio" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+            </div>
+        </a>
+
+        <a href="accesorios-gadgets.html" class="category-card" style="text-decoration: none; background: #1a1a1a; border-radius: 15px; overflow: hidden; border: 1px solid #333; transition: 0.3s;">
+            <div style="padding: 30px 20px; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 10px;">⌚</div>
+                <h4 style="color: #fff; font-weight: 800; margin: 0;">GADGETS & SMART</h4>
+            </div>
+            <div style="height: 200px; background: #252525; overflow: hidden;">
+                <img src="reloj3.png" alt="Gadgets" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<style>
+    .category-card:hover {
+        border-color: #007bff !important;
+        transform: translateY(-10px);
+    }
+    .category-card:hover img {
+        opacity: 1 !important;
+        transform: scale(1.05);
+    }
+    .category-card img { transition: 0.5s; }
+</style>
+
+    <footer class="simple-footer" style="padding: 40px 20px; text-align: center; background: #000;">
+        <p style="margin-bottom: 10px;">&copy; 2024 FIX & GO Tech - Calidad Premium</p>
+        <nav>
+            <a href="formulario.html" class="footer-link">Formulario de Satisfacción</a>
+            <span style="color: #666;">|</span> 
+            <a href="politica.html" class="footer-link">Política de Privacidad</a>
+        </nav>
+    </footer>
+
+    <style>
+        .category-card:hover {
+            border-color: #007bff !important;
+            transform: translateY(-5px);
+            background: #222 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        .footer-link {
+            color: #007bff;
+            text-decoration: underline;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    </style>
+</body>
+</html>

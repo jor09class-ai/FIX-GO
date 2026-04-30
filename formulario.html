@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satisfacción | FIX & GO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* Cambiado a negro para que no se vea el fondo blanco abajo */
+            background-color: #000000; 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navbar se mantiene igual pero sin el botón volver que quitamos en el HTML */
+        .navbar {
+            background-color: #000;
+            position: relative;
+            z-index: 10;
+        }
+
+        .form-wrapper {
+            width: 100%;
+            /* Ajustamos el alto para que el formulario respire y no se corte el título */
+            height: calc(100vh - 80px);
+            position: relative;
+            overflow: hidden; /* Esto ayuda a recortar la marca de agua de abajo */
+        }
+
+        iframe {
+            width: 100%;
+            /* Le damos un 110% de altura para que la parte de "hecho con forms.app" quede fuera de la vista */
+            height: 115%; 
+            border: none;
+            position: absolute;
+            top: -50px; /* Subimos un poco el iframe para que el título aparezca centrado y no cortado */
+        }
+
+        /* Ocultar scrollbars pero permitir scroll */
+        .form-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">FIX & GO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="accesorios.html">Accesorios</a></li>
+            <li><a href="sedes.html">Sedes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+    </nav>
+
+    <div class="form-wrapper">
+        <iframe 
+            id="form-satisfaccion" 
+            allowtransparency="true" 
+            allowfullscreen="true" 
+            allow="geolocation; microphone; camera" 
+            src="https://vthpl4hj.forms.app/form/69dcd9033a009fe0f27c1ae3">
+        </iframe>
+    </div>
+</section>
+    <footer class="simple-footer" style="padding: 20px; text-align: center;">
+        <p style="margin-bottom: 10px;">&copy; 2024 FIX & GO Tech - Calidad Premium</p>
+        <nav>
+            <a href="formulario.html" class="footer-link">Formulario de Satisfacción</a>
+            <span style="color: #666;">|</span> 
+            <a href="politica.html" class="footer-link">Política de Privacidad</a>
+        </nav>
+    </footer>
+
+    <style>
+        .footer-link {
+            color: #007bff; /* Color azul clásico de enlace o el que use tu marca */
+            text-decoration: underline; /* Subrayado siempre visible */
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #0056b3; /* Se oscurece al pasar el ratón */
+            text-decoration: none; /* El subrayado desaparece al tocarlo para dar feedback */
+        }
+    </style>
+</body>
+</html>
