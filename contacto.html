@@ -29,51 +29,47 @@
 
 <section class="contact-container">
     <div class="contact-form reveal" style="animation-delay: 0.2s;">
-        <form>
-            <div class="input-group">
-                <label>Nombre Completo</label>
-                <input type="text" placeholder="Tu nombre..." required>
-            </div>
+<form action="https://formspree.io/f/jor09class@gmail.com" method="POST">
+    
+    <div class="input-group">
+        <label>Nombre Completo</label>
+        <input type="text" name="nombre" placeholder="Tu nombre..." required>
+    </div>
 
-            <div class="input-row" style="display: flex; gap: 1rem;">
-                <div class="input-group" style="flex: 1;">
-                    <label>Email</label>
-                    <input type="email" placeholder="email@ejemplo.com" required>
-                </div>
-                <div class="input-group" style="flex: 1;">
-                    <label>Teléfono</label>
-                    <input type="tel" placeholder="600 000 000">
-                </div>
-            </div>
+    <div class="input-row" style="display: flex; gap: 1rem;">
+        <div class="input-group" style="flex: 1;">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="email@ejemplo.com" required>
+        </div>
+        <div class="input-group" style="flex: 1;">
+            <label>Teléfono</label>
+            <input type="tel" name="telefono" placeholder="600 000 000">
+        </div>
+    </div>
 
-            <div class="input-group">
-                <label>Asunto</label>
-                <select>
-                    <option>Reparación de dispositivo</option>
-                    <option>Información Sedes</option>
-                    <option>Otros</option>
-                </select>
-            </div>
+    <div class="input-group">
+        <label>Asunto</label>
+        <select name="asunto">
+            <option>Reparación de dispositivo</option>
+            <option>Información Sedes</option>
+            <option>Otros</option>
+        </select>
+    </div>
 
-            <div class="input-group">
-                <label>Adjuntar foto del daño (opcional)</label>
-                <input type="file" accept="image/*" style="font-size: 0.8rem; color: #ccc;">
-            </div>
+    <div class="input-group">
+        <label>Mensaje</label>
+        <textarea name="mensaje" rows="5" placeholder="Cuéntanos qué le pasa a tu equipo..."></textarea>
+    </div>
 
-            <div class="input-group">
-                <label>Mensaje</label>
-                <textarea rows="5" placeholder="Cuéntanos qué le pasa a tu equipo..."></textarea>
-            </div>
+    <div class="input-group" style="flex-direction: row; align-items: center; gap: 10px; margin-bottom: 20px;">
+        <input type="checkbox" id="privacy" name="privacidad_aceptada" required style="width: auto;">
+        <label for="privacy" style="font-size: 0.8rem; margin-bottom: 0;">
+            Acepto la <a href="privacidad.html" style="color: #fff; text-decoration: underline;">política de privacidad</a>
+        </label>
+    </div>
 
-            <div class="input-group" style="flex-direction: row; align-items: center; gap: 10px; margin-bottom: 20px;">
-                <input type="checkbox" id="privacy" required style="width: auto;">
-                <label for="privacy" style="font-size: 0.8rem; margin-bottom: 0;">
-                    Acepto la <a href="privacidad.html" style="color: #fff; text-decoration: underline;">política de privacidad</a>
-                </label>
-            </div>
-
-            <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-weight: bold;">SOLICITAR PRESUPUESTO GRATIS</button>
-        </form>
+    <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-weight: bold;">SOLICITAR PRESUPUESTO GRATIS</button>
+</form>
 
         <div class="social-links" style="margin-top: 2rem; text-align: center; border-top: 1px solid #333; padding-top: 1rem;">
             <p style="font-size: 0.9rem; color: #888; margin-bottom: 1rem;"></p>
